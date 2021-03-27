@@ -89,7 +89,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         let config = SFSafariViewController.Configuration()
         let safariViewController = SFSafariViewController(url: url, configuration: config)
-        safariViewController.modalPresentationStyle = .formSheet
+        safariViewController.modalPresentationStyle = .formSheet //for full size news screen use .fullScreen
         present(safariViewController, animated: true)
     }
 }
